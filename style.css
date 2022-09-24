@@ -295,8 +295,6 @@ section{
     color:var(--black);
 }
 
-
-
 .review .box-container .box .user{
     height: 7rem;
     width: 7rem;
@@ -381,7 +379,6 @@ section{
     padding-bottom: 2rem;
     font-size: 2rem;
 }
-
 
 .footer{
     background:var(--black);
