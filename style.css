@@ -3,7 +3,7 @@
 :root{
     --main-color:#d3ad7f;
     --black:#13131a;
-    --bg: rgb(45, 45, 199);
+    --bg: rgb(92, 67, 235);
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
@@ -200,7 +200,7 @@ section{
 
 .about .row .content{
     flex:1 1 45rem;
-    padding: 3rem;
+    padding: 6rem;
 }
 
 .about .row .content h3{
@@ -211,19 +211,18 @@ section{
 .about .row .content p{
     font-size: 1.6rem;
     color:#ccc;
-    
+    padding:1rem 0;
     line-height: 1.8;
 }
 
 
-
-
-/*.about_us{   
-    border:var(--border);   
-}*/
-
 .about_us{
-    height: 3rem;
+    text-transform: uppercase;   
+    padding-top: 60%;
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));   
+    height: 4rem;
     color:var(--main-color);
     font-size: 3rem;
     padding:1rem 0;
@@ -257,12 +256,37 @@ section{
 }
 
 .advantage .box-container .box h3{
+    color: #fff;
     font-size: 2rem;
     padding:1rem 0;
 }
 
 .advantage .box-container .box:hover{
     background:#fff;
+}
+
+.advantage .box-container .box:hover > *{
+    color:var(--black);
+}
+
+
+
+
+.advantage .box-container .box img{
+    height: 10rem;
+}
+
+.advantage .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.advantage .box-container .box:hover{
+    background:#fff;
+}
+
+.advantage .box-container .box:hover > *{
     color:var(--black);
 }
 
@@ -295,11 +319,19 @@ section{
     color:var(--black);
 }
 
+
+
 .review .box-container .box .user{
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.review .box-container .box h3{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:#fff;
 }
 
 .contact .row{
@@ -373,6 +405,7 @@ section{
     padding-bottom: 2rem;
     font-size: 2rem;
 }
+
 
 .footer{
     background:var(--black);
