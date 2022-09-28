@@ -4,7 +4,8 @@
     --main-color:#d3ad7f;
     --black:#13131a;
     --bg: rgb(92, 67, 235);
-    --border:.1rem solid rgba(255,255,255,.3);
+    --border:.1rem solid rgba(224, 213, 213, 0.3);
+    
 }
 
 *{
@@ -47,7 +48,6 @@ section{
 
 .heading{
     text-align: center;
-    
     color:var(--main-color);
     text-transform: uppercase;
     padding-bottom: 3.5rem;
@@ -85,6 +85,7 @@ section{
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
+  
 }
 
 .header .navbar a{
@@ -160,9 +161,14 @@ section{
     min-height: 70vh;
     display: flex;
     align-items: center;
-    background:url(../images/home-img.jpeg) no-repeat;
+    background:url(images/stocks.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 100px;
+}
+
+img{
+    opacity: 100px;
 }
 
 .home .content{
@@ -245,10 +251,10 @@ section{
     gap:1.5rem;
 }*/
 
-.advantage .box-container .box{
-    padding:5rem;
-    text-align: center;
-    border:var(--border);    
+
+.advantage .box-container .box:hover{
+    background:#fff;
+    color:var(--black);
 }
 
 .advantage .box-container .box img{
@@ -258,7 +264,7 @@ section{
 .advantage .box-container .box h3{
     color: #fff;
     font-size: 2rem;
-    padding:1rem 0;
+    padding: 0;
 }
 
 .advantage .box-container .box:hover{
@@ -269,69 +275,26 @@ section{
     color:var(--black);
 }
 
-
-
-
-.advantage .box-container .box img{
-    height: 10rem;
-}
-
-.advantage .box-container .box h3{
-    color: #fff;
-    font-size: 2rem;
-    padding:1rem 0;
-}
-
-.advantage .box-container .box:hover{
-    background:#fff;
-}
-
-.advantage .box-container .box:hover > *{
-    color:var(--black);
-}
-
-.menu .box-container{
+.features .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
 }
 
-.menu .box-container .box{
+.features .box-container .box{
     padding:5rem;
     text-align: center;
     border:var(--border);    
 }
 
-.menu .box-container .box img{
+.features .box-container .box img{
     height: 10rem;
 }
 
-.menu .box-container .box h3{
+.features .box-container .box h3{
     color: #fff;
     font-size: 2rem;
     padding:1rem 0;
-}
-.menu .box-container .box:hover{
-    background:#fff;
-}
-
-.menu .box-container .box:hover > *{
-    color:var(--black);
-}
-
-
-
-.review .box-container .box .user{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.review .box-container .box h3{
-    padding:1rem 0;
-    font-size: 2rem;
-    color:#fff;
 }
 
 .contact .row{
@@ -378,20 +341,11 @@ section{
     width: 100%;
     padding:2rem;
     font-size: 1.7rem;
-    color:rgb(124, 134, 29);
-    text-transform: none;
-    background:none;
-}
-
-
-.contact .row form .inputBox input{
-    width: 100%;
-    padding:2rem;
-    font-size: 1.7rem;
     color:#fff;
     text-transform: none;
     background:none;
 }
+
 
 .info .box-container .box{
     border:var(--border); 
@@ -405,7 +359,6 @@ section{
     padding-bottom: 2rem;
     font-size: 2rem;
 }
-
 
 .footer{
     background:var(--black);
@@ -443,7 +396,7 @@ section{
     padding:.7rem 2rem;
     color:#fff;
     border:var(--border);
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .footer .links a:hover{
@@ -464,24 +417,24 @@ section{
 
 .advantage .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /*minmax for the 4 boxes for advantage*/
     gap:1.5rem;
 }
 
 .advantage .box-container .box{
-    padding:5rem;
+    padding:3rem;
     text-align: center;
     border:var(--border);    
 }
 
 .advantage .box-container .box img{
-    height: 10rem;
+    height: 2rem;
 }
 
 .advantage .box-container .box h3{
     color: #fff;
     font-size: 2rem;
-    padding:1rem 0;
+    padding:1rem;
 }
 
 .advantage .box-container .box:hover{
@@ -541,6 +494,8 @@ section{
         width: 90%;
         right: 2rem;
     }
+
+
 
     .home{
         background-position: left;
